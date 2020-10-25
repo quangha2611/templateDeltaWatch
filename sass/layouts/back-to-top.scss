@@ -1,0 +1,26 @@
+#backtotop {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 3rem;
+    right: 2%;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+    visibility: hidden;
+    z-index: 50;
+
+    i {
+        color: white;
+        font-size: 18px;
+    }
+
+    &:hover {
+        background-color: #05c3ff;
+    }
+}
