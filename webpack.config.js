@@ -9,6 +9,9 @@ module.exports = {
         'about_us' : '/sass/about_us.scss',
         'address' : '/sass/address.scss',
         'news' : '/sass/news.scss',
+        'login' : '/sass/login.scss',
+        'signup' : '/sass/signup.scss',
+        'cart' : '/sass/cart.scss',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

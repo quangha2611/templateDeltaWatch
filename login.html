@@ -15,8 +15,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
-    <link rel="stylesheet" href="./dist/css/address.css">
-    <title>Địa chỉ cửa hàng</title>
+    <link rel="stylesheet" href="./dist/css/login.css">
+    <title>Đăng nhập</title>
     <style>
         @font-face {
             font-family: "fontTitle";
@@ -407,38 +407,24 @@
 
     <!-- CONTENT -->
     <div class="content">
-        <div class="container-fluid pl-0 pr-0">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.7453277018835!2d106.66581331467518!3d20.841987999504653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7a7bdb4ed411%3A0xc173da3f140c38c4!2zQuG6v24geGUga2jDoWNoIE5p4buHbSBOZ2jEqWE!5e0!3m2!1svi!2s!4v1603677961753!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-        <div class="container input-your-info">
-            <h4>
-                Nhập thông tin của bạn
-            </h4>
-            <form action="#">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
-                        <input type="text" placeholder="Tên của bạn" class="form-control">
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
-                        <input type="text" placeholder="Tên của bạn" class="form-control">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 content_main">
+                    <form>
+                        <h4>Đăng nhập</h4>
+                        <p>Nếu bạn chưa có tài khoản,&nbsp;<a href="#">đăng ký tại đây</a></p>
+                        <input type="email" placeholder="Email" class="form-control">
+                        <input type="password"  placeholder="Password" class="form-control">
+                        <button>Đăng nhập</button>
+                    </form>
+                    <a href="#" class="forget">Quên mật khẩu</a>
+                    <p>Hoặc đăng nhập bằng</p>
+                    <div class="d-flex justify-content-between">
+                        <img src="/images/content/login/facebook.svg" alt="">
+                        <img src="/images/content/login/google.svg" alt="">
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
-                        <input type="text" placeholder="Tên của bạn" class="form-control">
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
-                        <input type="text" placeholder="Tên của bạn" class="form-control">
-                    </div>
-
-                    <div class="col-xl-12 col-lg-12 col-sm-12 col-12" style="margin-top: 1.5rem;">
-                        <textarea class="form-control" placeholder="Tên của bạn" id="exampleFormControlTextarea1" rows="6"></textarea>
-                    </div>                
-                </div>
-
-                <button type="submit">Gửi ngay</button>
-            </form>
+            </div>
         </div>
     </div>
 
@@ -452,7 +438,7 @@
                         Cộng đồng Smartwatch
                     </p>
                     <div class="social_list d-flex">
-									
+                                    
                         <a class="footer_social_icon" href="#" title="Theo dõi trên Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
@@ -611,5 +597,5 @@
     </div>
     
 </body>
-<script src="/dist/js/address.js"></script>
+<script src="/dist/js/login.js"></script>
 </html>

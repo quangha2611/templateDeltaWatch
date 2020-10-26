@@ -1,0 +1,66 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+@keyframes animation3d{
+    0%{transform:perspective(200px) rotate3d(0, 1, 0, -90deg) translateX(-100%)}
+    100%{transform:perspective(200px) rotate3d(0, 1, 0, 0deg) translateX(0px)}
+}
+
+.mask {
+    background-color: rgba(0,0,0,0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.3s;
+
+    &-active {
+        z-index: 99;
+        opacity: 1;
+    }
+}
+
+.content {
+
+}
+
+
+
+@import '/sass/layouts/notification-sale.scss';
+
+@import '/sass/layouts/header.scss';
+
+@import '/sass/layouts/nav-bar.scss';
+
+.breadcrumb {
+    background-color: unset;
+
+    a, i {
+        color: #000;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #05c3ff;
+    }
+
+    a:last-child {
+        color: #05c3ff;
+    }
+}
+
+@import '/sass/layouts/footer.scss';
+
+@import '/sass/layouts/copyright.scss';
+
+@import '/sass/layouts/back-to-top.scss';
