@@ -134,7 +134,7 @@
                 }
 
                 &:hover {
-                    span, i {
+                    span, & > span > i {
                         color: #05c3ff;
                     }
 
@@ -176,6 +176,122 @@
                 display: flex;
                 align-items: center;
             }
+        }
+
+        .cart {
+            padding: 1rem!important;
+            &_item {
+                border-bottom: 1px solid #ebebeb!important;
+                margin-bottom: 1.5rem;
+                padding-bottom: 1.5rem!important;
+
+                &_image {
+                    width: 30%;
+                }
+
+                &_info {
+                    .name {
+                        font-size: 14px;
+                        color: #000;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: #05c3ff;
+                        }
+                    }
+
+                    .price {
+                        font-weight: bold;
+                        color: #f61900;
+                    }
+
+                    .quantity {
+                        position: relative;
+                        width: 40%;
+
+                        button {
+                            position: absolute;
+                            right: 0;
+                            height: 50%;
+                            width: 1.25rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: none;
+                            cursor: pointer;
+
+                            &:first-child {
+                                top: 0;
+                                background-color: #ebebeb;
+                                color: #fff;
+                            }
+
+                            &:last-child {
+                                bottom: 0;
+                                background-color: #fff;
+                                color: #000;
+                                border: 1px solid #ebebeb;
+                            }
+
+                            &:hover {
+                                color: #05c3ff;
+                            }
+                            
+                        } 
+
+                        input {
+                            height: 2.5rem;
+                            width: 80%;
+                            border-radius: 0;
+                            border: 1px solid #ebebeb;
+                            border-right: none;
+                            text-align: center;
+                        }
+
+                        input::-webkit-outer-spin-button,
+                        input::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                        }
+                    }
+                }
+
+                i.fa-times {
+                    position: absolute;
+                    right: 1rem;
+                    top: 1rem;
+                    &:hover {
+                        color: #05c3ff;
+                    }
+                }
+            }
+
+            a:last-child {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 0.75rem 0;
+                font-size: 16px;
+                color: #fff;
+                background-color: #05c3ff;
+                border-radius: 7px;
+                border: 1px solid #05c3ff;
+                i {
+                    color: #fff;
+                    margin-right: 0.25rem;
+                    font-size: 18px;
+                }
+
+                &:hover {
+                    background-color: #fff;
+                    color: #05c3ff;
+                    text-decoration: none;
+
+                    i {
+                        color: #05c3ff;
+                    }
+                }
+            }
+
         }
     }
 

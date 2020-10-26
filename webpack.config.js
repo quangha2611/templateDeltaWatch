@@ -6,6 +6,9 @@ module.exports = {
         'index' : '/sass/index.scss',
         'product' : '/sass/product.scss',
         'product_detail' : '/sass/product_detail.scss',
+        'about_us' : '/sass/about_us.scss',
+        'address' : '/sass/address.scss',
+        'news' : '/sass/news.scss',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

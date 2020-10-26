@@ -1144,6 +1144,18 @@ html {
 
         .knowledge_item {
             width: 23%;
+            position: relative;
+
+            .tag-date {
+                position: absolute;
+                background-color: #34b1e2;
+                top: 5px;
+                left: 5px;
+                z-index: 2;
+                padding: 0 5px;
+                border-radius: 3px;
+                color: #fff;
+            }
 
             &_img {
                 overflow: hidden;

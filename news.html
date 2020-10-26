@@ -15,8 +15,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
-    <link rel="stylesheet" href="./dist/css/product.css">
-    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="./dist/css/news.css">
+    <title>Địa chỉ cửa hàng</title>
     <style>
         @font-face {
             font-family: "fontTitle";
@@ -400,23 +400,56 @@
             <div class="row align-items-center">
                 <a href="#">Trang chủ</a>
                 <i class="fa fa-angle-right ml-3 mr-3"></i>
-                <a href="#">Tất cả sản phẩm</a>
+                <a href="#">Tin tức</a>
             </div>
         </div>
     </div>
 
     <!-- CONTENT -->
     <div class="content">
-        <div class="content_main mt-3">
-            <div class="container">
-                <div class="row">
-                    <div class="open-main-left-mobile" style="display: none;">
-                        <i class="fa fa-align-right"></i>
+        <div class="container">
+            <div class="row">
+                <h2 class="title">
+                    <span class="big">Tin tức</span>
+                </h2>
+                <div class="content-top row">
+                    <div class="col-xl-9 col-lg-9 col-sm-12">
+                        <div class="row">
+                            <div class="post-big col-xl-6 col-lg-6 col-sm-6 pl-0">
+                                <div class="tag-date">25/11/2019</div>
+                                <div class="post-big_img">
+                                    <img src="./images/content/news/post1.jpg" alt="" width="100%">
+                                </div>
+                                <div class="post-big_des">
+                                    <p class="des_author">Đăng bởi: Đào Thị Uyên</p>
+                                    <a href="#" title="Đồng hồ thông minh Apple Watch mới ra mắt">Đồng hồ thông minh Apple Watch mới ra mắt</a>
+                                </div>
+                            </div>
+                            <div class="post-thumbnail col-xl-6 col-lg-6 col-sm-6">
+                                <div class="d-flex">
+                                    <div class="post-big col-xl-5 col-lg-5 col-sm-4 col-4 pl-0 pr-0">
+                                        <div class="tag-date">25/11/2019</div>
+                                        <div class="post-big_img">
+                                            <img src="./images/content/news/post1.jpg" alt="" width="100%">
+                                        </div>
+                                    </div>
+                                    <h5 class="col-xl-7 col-lg-7 col-sm-8 col-8 pr-0">Đồng hồ Apple Watch chính hãng bán ra tại VN</h5>
+                                </div>
+                                <ul class="lis-post">
+                                    <li><a href="#">Thị trường smartwatch: khi Fitbit và Google động thủ</a></li>
+                                    <li><a href="#">Đồng hồ thông minh nào nâng cấp Android Wear 2.0</a></li>
+                                    <li><a href="#">Đức cấm đồng hồ thông minh cho trẻ em</a></li>
+                                    <li><a href="#">Thiết bị đeo tay thông minh cảnh báo tiểu đường đúng tới 85%</a></li>
+                                    <li><a href="#">Đồng hồ thông minh biến cánh tay thành màn hình cảm ứng</a></li>
+                                    <li><a href="#">Google có thể ra mắt đồng hồ thông minh vào cuối năm nay</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content_main-left col-xl-3 col-lg-3 col-sm-4">
+                    <div class="col-xl-3 col-lg-3 col-sm-12">
                         <div class="list-category">
                             <div class="title">
-                                Danh mục sản phẩm
+                                Danh mục tin
                             </div>
                             <ul class="">
                                 <li class="menu-item">
@@ -497,592 +530,69 @@
                                 </li>
                             </ul>
                         </div>
-
-                        <div class="filter-brand">
-                            <div class="title">
-                                Thương hiệu
-                            </div>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" name="" id="brandSamsung">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="brandSamsung">
-                                        Brand Samsung
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="brandSamsung">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="brandSamsung">
-                                        Brand Samsung
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="brandSamsung">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="brandSamsung">
-                                        Brand Samsung
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="brandSamsung">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="brandSamsung">
-                                        Brand Samsung
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="brandSamsung">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="brandSamsung">
-                                        Brand Samsung
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="filter-shape">
-                            <div class="title">
-                                Kiểu dáng
-                            </div>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" name="" id="shapeSmart">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="shapeSmart">
-                                       Smart Watch
-                                    </label>
-                                </li>
-                            </u>
-                        </div>
-
-                        <div class="filter-color">
-                            <div class="title">
-                                Màu sắc
-                            </div>
-                            <ul>
-                                <li>
-                                    <div class="filter-color-yeallow" style="background-color: #F1C40F;"></div>
-                                </li>
-
-                                <li>
-                                    <div class="filter-color-purple" style="background-color: #9B59B6;"></div>
-                                </li>
-
-                                <li>
-                                    <div class="filter-color-red" style="background-color: #E74C3C;"></div>
-                                </li>
-
-                                <li>
-                                    <div class="filter-color-green" style="background-color: #2ECC71;"></div>
-                                </li>
-
-                                <li>
-                                    <div class="filter-color-pink" style="background-color: #FF00CC;"></div>
-                                </li>
-
-                                <li>
-                                    <div class="filter-color-orange" style="background-color: #E67E22;"></div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="filter-size">
-                            <div class="title">
-                                Kích thước
-                            </div>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" name="" id="size30mm">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="size30mm">
-                                        30mm
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="size30mm">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="size30mm">
-                                        30mm
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="size32mm">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="size32mm">
-                                        32mm
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="size34mm">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="size34mm">
-                                        34mm
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="size36mm">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="size36mm">
-                                        36mm
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="size38mm">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="size38mm">
-                                        38mm
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="size40mm">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="size40mm">
-                                        40mm
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="size42mm">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="size42mm">
-                                        42mm
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="size44mm">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="size44mm">
-                                        44mm
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="size46mm">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="size46mm">
-                                        46mm
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="filter-price">
-                            <div class="title">
-                                Giá sản phẩm
-                            </div>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" name="" id="priceUnder100">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="priceUnder100">
-                                        Giá dưới 100.000
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="priceUnder200">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="priceUnder200">
-                                        100.000 - 200.000 
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="priceUnder300">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="priceUnder300">
-                                        200.000 - 300.000
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="priceUnder500">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="priceUnder500">
-                                        300.000 - 500.000
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="priceUnder1m">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="priceUnder1m">
-                                        500.000 - 1.000.000
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="" id="priceOver1m">
-                                    <div class="fake-checkbox"></div>
-                                    <label for="priceOver1m">
-                                        Giá trên 1.000.000
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                    <div class="content_main-right col-xl-9 col-lg-9">
-                        <div class="ads row mb-3">
-                            <div class="col-xl-6 col-lg-6 col-sm-6">
-                                <img src="./images/content/product/ads/banner1.jpg" alt="" width="100%">
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-sm-6">
-                                <img src="./images/content/product/ads/banner2.jpg" alt="" width="100%">
-                            </div>
-                        </div>
-                        <div class="sort row justify-content-between">
-                            <div class="col-xl-8 col-lg-8 col-sm-8 col-12">
-                                <h4 style="font-weight: normal;">Tất cả sản phẩm</h4>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-sm-4 col-12">
-                                <div class="d-flex justify-content-end align-items-baseline">
-                                    <p>Sắp xếp:</p>
-                                    <div class="current-sort-option">
-                                        Thứ tự
-                                        <i class="fa fa-angle-down ml-2"></i>
-                                        <ul>
-                                            <li>
-                                                <input type="radio" name="sort-option" id="sort-default">
-                                                <label for="sort-default">Mặc định</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" name="sort-option" id="sort-AZ">
-                                                <label for="sort-AZ">A → Z</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" name="sort-option" id="sort-ZA">
-                                                <label for="sort-ZA">Z → A</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" name="sort-option" id="sort-priceUp">
-                                                <label for="sort-priceUp">Giá tăng dần</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" name="sort-option" id="sort-priceDown">
-                                                <label for="sort-priceDown">Giá giảm dần</label>
-                                            </li>
-                                        </ul>
-                                    </div>
+                </div>
+                <div class="content-bottom">
+                    <div class="col-xl-12 col-lg-12 col-sm-12 col-12 pl-0">
+                        <div class="row post_item">
+                            <div class="post-big col-xl-4 col-lg-4 col-sm-4 col-4 pl-0">
+                                <div class="tag-date">25/11/2019</div>
+                                <div class="post-big_img">
+                                    <img src="./images/content/news/post1.jpg" alt="" width="100%">
                                 </div>
+                            </div>
+                            <div class="post_info col-xl-8 col-lg-8 col-sm-8 col-8 pl-0">
+                                <h5><a href="#">Tính năng đo điện tâm đồ được cập nhật vào Apple Watch</a></h5>
+                                <p class="mt-3 pr-5">
+                                    TTO - Apple từng công bố sẽ đưa các tính năng về tim mạch vào Apple Watch trong tháng 9, nhưng mới đây mới chính thức được áp dụng. 
+                                    Theo đó, đồn...
+                                </p>
                             </div>
                         </div>
-                        <div class="list-product">
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
+                        <div class="row post_item">
+                            <div class="post-big col-xl-4 col-lg-4 col-sm-4 col-4 pl-0">
+                                <div class="tag-date">25/11/2019</div>
+                                <div class="post-big_img">
+                                    <img src="./images/content/news/post1.jpg" alt="" width="100%">
                                 </div>
                             </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
-                            </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
-                            </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
-                            </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
-                            </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
-                            </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
-                            </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
-                            </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
-                            </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
-                            </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
-                            </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
-                            </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
-                            </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
-                            </div>
-                            <div class="product_item">
-                                <div class="item_image">
-                                    <img src="./images/content/product/list-product/product1.jpg" width="90%" alt="">
-                                    <div class="item_image_mask">
-                                        <div class="animation3d">
-                                            <div>
-                                                <i class="fas fa-search-plus"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fas fa-shopping-basket iconcart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="./images/content/product/list-product/option.png" alt="" class="item_image_option">
-                                </div>
-                                <div class="item_info">
-                                    <p class="item_info_name">Ten san pham</p>
-                                    <p class="item_info_price">1.000.000₫</p>
-                                </div>
+                            <div class="post_info col-xl-8 col-lg-8 col-sm-8 col-8 pl-0">
+                                <h5><a href="#">Tính năng đo điện tâm đồ được cập nhật vào Apple Watch</a></h5>
+                                <p class="mt-3 pr-5">
+                                    TTO - Apple từng công bố sẽ đưa các tính năng về tim mạch vào Apple Watch trong tháng 9, nhưng mới đây mới chính thức được áp dụng. 
+                                    Theo đó, đồn...
+                                </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="pagination">
-                        <div class="pagination-prev">
-                            <i class="fa fa-angle-left"></i>
+                        <div class="row post_item">
+                            <div class="post-big col-xl-4 col-lg-4 col-sm-4 col-4 pl-0">
+                                <div class="tag-date">25/11/2019</div>
+                                <div class="post-big_img">
+                                    <img src="./images/content/news/post1.jpg" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="post_info col-xl-8 col-lg-8 col-sm-8 col-8 pl-0">
+                                <h5><a href="#">Tính năng đo điện tâm đồ được cập nhật vào Apple Watch</a></h5>
+                                <p class="mt-3 pr-5">
+                                    TTO - Apple từng công bố sẽ đưa các tính năng về tim mạch vào Apple Watch trong tháng 9, nhưng mới đây mới chính thức được áp dụng. 
+                                    Theo đó, đồn...
+                                </p>
+                            </div>
                         </div>
-                        <div class="page page-active">
-                            1
-                        </div>
-                        <div class="page">
-                            2
-                        </div>
-                        <div class="pagination-next">
-                            <i class="fa fa-angle-right"></i>
-                        </div>
-                    </div>
-                    <div class="ads-last mt-5" style="display: none;">
-                        <div class="col-sm-6 pl-0">
-                            <img src="./images/content/product/ads/banner1.jpg" alt="" width="100%">
-                        </div>
-                        <div class="col-sm-6 pr-0">
-                            <img src="./images/content/product/ads/banner2.jpg" alt="" width="100%">
+                        <div class="row post_item">
+                            <div class="post-big col-xl-4 col-lg-4 col-sm-4 col-4 pl-0">
+                                <div class="tag-date">25/11/2019</div>
+                                <div class="post-big_img">
+                                    <img src="./images/content/news/post1.jpg" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="post_info col-xl-8 col-lg-8 col-sm-8 col-8 pl-0">
+                                <h5><a href="#">Tính năng đo điện tâm đồ được cập nhật vào Apple Watch</a></h5>
+                                <p class="mt-3 pr-5">
+                                    TTO - Apple từng công bố sẽ đưa các tính năng về tim mạch vào Apple Watch trong tháng 9, nhưng mới đây mới chính thức được áp dụng. 
+                                    Theo đó, đồn...
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1091,7 +601,7 @@
     </div>
 
     <!-- FOOTER -->
-     <div class="footer" style="background-image: url('./images/footer/bg_footer.jpg');">
+    <div class="footer" style="background-image: url('./images/footer/bg_footer.jpg');">
         <div class="footer_mask"></div>
         <div class="footer_top container">
             <div class="row">
@@ -1163,7 +673,7 @@
                             <li><a href="#">SmartWatch</a></li>
                             <li><a href="#">Tin tức</a></li>
                             <li><a href="#">Về chúng tôi</a></li>
-                            <li><a href="#">Địa chỉ cửa hàng</a></li>
+                            <li><a href="#">Tin tức</a></li>
                         </ul>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-sm-6">
@@ -1241,7 +751,7 @@
         </div>
     </div>
 
-    <!-- COPY RIGHT -->
+    <!-- COPYRIGHT -->
     <div class="copyright">
         <div class="container">
             <div class="row">
@@ -1315,23 +825,6 @@
     }
 
 
-    // Process checkbox
-    var checkboxs = document.querySelectorAll('.content_main-left input[type="checkbox"]');
-    for (var i=0; i<checkboxs.length; i++) {
-        checkboxs[i].addEventListener('change', function () {
-            let fakeCheckbox = this.nextElementSibling;
-            fakeCheckbox.classList.toggle('fake-checkbox-active');
-        });
-    }
-
-    var checkboxs = document.querySelectorAll('.content_main-right input[type="checkbox"]');
-    for (var i=0; i<checkboxs.length; i++) {
-        checkboxs[i].addEventListener('change', function () {
-            let fakeCheckbox = this.nextElementSibling;
-            fakeCheckbox.classList.toggle('fake-checkbox-active');
-        });
-    }
-
     // Sub menu menu filter side bar
     var buttonToOpenDropMenus = document.querySelectorAll('.btn-show-drop-menu');
     var buttonCloseDropMenus   = document.querySelectorAll('.btn-close-drop-menu');
@@ -1355,11 +848,5 @@
         });
     }
 
-    // Menu filter side bar 
-    var buttonOpenContentMainLeft = document.querySelector('.open-main-left-mobile');
-    buttonOpenContentMainLeft.addEventListener('click', function () {
-        this.classList.toggle('open-main-left-mobile-active');
-        document.querySelector('.content_main-left').classList.toggle('content_main-left-active');
-    })
 </script>
 </html>

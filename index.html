@@ -74,8 +74,67 @@
                         <span style="font-weight: normal; color: #ebebeb; font-size: 18px; margin-top: -5px;">|</span>
                         <li>
                             <span><i class="fas fa-shopping-basket"></i> Giỏ hàng (0)</span>
-                            <ul class="header_sub-menu">
-                                <li><p>Không có sản phẩm nào.</p></li>
+                            <ul class="cart header_sub-menu">
+                                <li class="cart_item">
+                                    <div class="cart_item_image">
+                                        <img src="./images/header/product1.jpg" alt="" width="100%">
+                                    </div>
+                                    <div class="cart_item_info">
+                                        <a href="#" class="name">Samsung Gear Pro</a>
+                                        <p class="price">4.500.000₫</p>
+                                        <div class="quantity">
+                                            <button type="button" onclick="if (document.getElementById('quantity1').value < 100 ) { document.getElementById('quantity1').value = parseInt(document.getElementById('quantity1').value) + 1 }">
+                                                +
+                                            </button>
+                                            <input type="number" value="1" id="quantity1">
+                                            <button type="button" onclick="if (document.getElementById('quantity1').value > 1 ) { document.getElementById('quantity1').value = parseInt(document.getElementById('quantity1').value) - 1 }">
+                                                -
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <li class="cart_item">
+                                    <div class="cart_item_image">
+                                        <img src="./images/header/product1.jpg" alt="" width="100%">
+                                    </div>
+                                    <div class="cart_item_info">
+                                        <a href="#" class="name">Samsung Gear Pro</a>
+                                        <p class="price">4.500.000₫</p>
+                                        <div class="quantity">
+                                            <button type="button" onclick="if (document.getElementById('quantity2').value < 100 ) { document.getElementById('quantity2').value = parseInt(document.getElementById('quantity2').value) + 1 }">
+                                                +
+                                            </button>
+                                            <input type="number" value="1" id="quantity2">
+                                            <button type="button" onclick="if (document.getElementById('quantity2').value > 1 ) { document.getElementById('quantity2').value = parseInt(document.getElementById('quantity2').value) - 1 }">
+                                                -
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <li class="cart_item">
+                                    <div class="cart_item_image">
+                                        <img src="./images/header/product1.jpg" alt="" width="100%">
+                                    </div>
+                                    <div class="cart_item_info">
+                                        <a href="#" class="name">Samsung Gear Pro</a>
+                                        <p class="price">4.500.000₫</p>
+                                        <div class="quantity">
+                                            <button type="button" onclick="if (document.getElementById('quantity3').value < 100 ) { document.getElementById('quantity3').value = parseInt(document.getElementById('quantity3').value) + 1 }">
+                                                +
+                                            </button>
+                                            <input type="number" value="1" id="quantity3">
+                                            <button type="button" onclick="if (document.getElementById('quantity3').value > 1 ) { document.getElementById('quantity3').value = parseInt(document.getElementById('quantity3').value) - 1 }">
+                                                -
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-times"></i>
+                                </li>
+                                <a href="#">
+                                    <i class="fas fa-shopping-basket"></i>Tới giỏ hàng và thanh toán
+                                </a>
                             </ul>
                         </li>
                     </ul>
@@ -1369,6 +1428,7 @@
             <div class="container mt-5">
                 <div class="row justify-content-between">
                     <div class="knowledge_item">
+                        <div class="tag-date">25/11/2019</div>
                         <div class="knowledge_item_img">
                             <img src="./images/content/index/knowledge/post1.jpg" alt="" width="100%">
                         </div>
@@ -1378,6 +1438,7 @@
                         </div>
                     </div>
                     <div class="knowledge_item">
+                        <div class="tag-date">25/11/2019</div>
                         <div class="knowledge_item_img">
                             <img src="./images/content/index/knowledge/post1.jpg" alt="" width="100%">
                         </div>
@@ -1387,6 +1448,7 @@
                         </div>
                     </div>
                     <div class="knowledge_item">
+                        <div class="tag-date">25/11/2019</div>
                         <div class="knowledge_item_img">
                             <img src="./images/content/index/knowledge/post1.jpg" alt="" width="100%">
                         </div>
@@ -1396,6 +1458,7 @@
                         </div>
                     </div>
                     <div class="knowledge_item">
+                        <div class="tag-date">25/11/2019</div>
                         <div class="knowledge_item_img">
                             <img src="./images/content/index/knowledge/post1.jpg" alt="" width="100%">
                         </div>
