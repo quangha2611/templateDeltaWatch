@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="./dist/css/cart.css">
+    <title>Giỏ hàng</title>
+    <style>
+        @font-face {
+            font-family: "fontTitle";
+            src: url('/font/Josefin_Sans/static/JosefinSans-Bold.ttf');
+        }
+    </style>
+</head>
+<body>
+    <!-- MASK -->
+    <div class="mask"> </div>
+
+    <!-- NOTIFICATION SALE -->
+    <div class="notification-sale d-flex justify-content-center">
+        <span class="text-price">Ngày 12.12 siêu sale</span>&nbsp;
+        <span class="text-normal">giao hàng miễn phí cho đơn hàng trên 1 triệu với mã</span>&nbsp;
+        <span class="notification-sale_code">Deltafree</span>&nbsp;
+        <a href="#" class="notification-sale_link">Chi tiết</a>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <div class="header_contact">
+                    <div class="account">
+                        <span><i class="far fa-user-circle"></i>&nbsp;Tài khoản</span>
+                        <ul class="header_sub-menu">
+                            <li><a href="#">Đăng nhập</a></li>
+                            <li><a href="#">Đăng ký</a></li>
+                        </ul>
+                    </div>
+                    <div class="call">
+                        <a href="#"><i class="fas fa-sms"></i>&nbsp;Chat</a>
+                        <span>or</span>
+                        <a class="fone" href="#">Call 0388287614</a>
+                    </div>
+                </div>
+
+                <div class="header_logo">
+                    <a href="#">
+                        <img src="/images/header/logo.png" alt="" width="100%">
+                    </a>
+                </div>
+
+                <div class="header_search">
+                    <ul>
+                        <li>
+                            <form>
+                                <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                                <button type="submit"><i class="fa fa-search"></i> </button>
+                            </form>
+                            <span><i class="fa fa-search"></i> Tìm kiếm</span>
+                        </li>
+                        <span style="font-weight: normal; color: #ebebeb; font-size: 18px; margin-top: -5px;">|</span>
+                        <li>
+                            <span><i class="fas fa-shopping-basket"></i> Giỏ hàng (0)</span>
+                            <ul class="header_sub-menu">
+                                <li><p>Không có sản phẩm nào.</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-mobile">
+        <div class="container">
+            <div class="header-mobile_top row align-items-center pt-1 pb-1">
+                <i class="fas fa-bars" onclick="showMobileMenu()"></i>
+                <div class="logo">
+                    <img src="./images/header/logo.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="header-mobile_search row justify-content-between pt-2 pb-2">
+                <div class="search">
+                    <span class="iconsearch">
+                        <i class="fa fa-search"></i> 
+                        Tìm kiếm
+                    </span>
+                </div>
+                <form>
+                    <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                    <button type="submit"><i class="fa fa-search"></i> </button>
+                </form>
+                <div class="icon_hotline">
+                    <i class="fas fa-shopping-basket iconcart"></i>
+                    <span>Giỏ hàng (0)</span>
+                </div>
+            </div>  
+        </div>
+        <div class="header-mobile_menu">
+            <div style="padding: 0 2rem; margin-bottom: 1rem;">
+                <a href="#">Đăng nhập</a>
+                <span>/</span>
+                <a href="#">Đăng ký</a>
+            </div>
+            <div class="header-mobile_menu-main">
+                <ul class="">
+                    <li class="menu-item">
+                        <a href="#">Trang chủ</a>
+                    </li>
+                    <li class="menu-item has-sub-menu">
+                        <a href="#">Sản phẩm</a>
+                        <i class="fa fa-plus btn-show-sub-menu"></i>
+                        <i class="fa fa-minus btn-close-sub-menu"></i>
+                        
+                        <ul class="sub-menu menu-sub-1">
+                            <li class="menu-item has-sub-menu">
+                                <a href="#">Trang chủ</a>
+                                <i class="fa fa-plus btn-show-sub-menu"></i>
+                                <i class="fa fa-minus btn-close-sub-menu"></i>
+
+                                <ul class="sub-menu menu-sub-2">
+                                    <li class="menu-item">
+                                        <a href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="menu-item"><a href="#">Trang chur</a></li>
+                                </ul>
+
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="#">Trang chur</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="menu-item has-sub-menu">
+                        <a href="#">SmartWatch</a>
+                        <i class="fa fa-plus btn-show-sub-menu"></i>
+                        <i class="fa fa-minus btn-close-sub-menu"></i>
+                        
+                        <ul class="sub-menu menu-sub-1">
+                            <li class="menu-item has-sub-menu">
+                                <a href="#">Trang chủ</a>
+                                <i class="fa fa-plus btn-show-sub-menu"></i>
+                                <i class="fa fa-minus btn-close-sub-menu"></i>
+
+                                <ul class="sub-menu menu-sub-2">
+                                    <li class="menu-item">
+                                        <a href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="menu-item"><a href="#">Trang chur</a></li>
+                                </ul>
+
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="#">Trang chur</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Tin tức</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Về chúng tôi</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Địa chỉ cửa hàng</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- NAV BAR -->
+    <div class="nav-bar">
+        <div class="container">
+            <div class="row justify-content-center">
+                <ul class="mb-0">
+                    <li>
+                        <a href="#">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Sản phẩm
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="menu-product-drop-down">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3">
+                                        <ul class="pl-0">
+                                            <h3>
+                                                <a href="/dong-ho-nam" title="Đồng hồ nam">Đồng hồ nam</a>
+                                            </h3>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Philips">Đồng hồ Philips</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Epos swiss">Đồng hồ Epos swiss</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Eries gold">Đồng hồ Eries gold</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Citizen">Đồng hồ Citizen</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Tourbillon">Đồng hồ Tourbillon</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Du manoir">Đồng hồ Du manoir</a> 
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3">
+                                        <ul class="pl-0">
+                                            <h3>
+                                                <a href="/dong-ho-nam" title="Đồng hồ nam">Đồng hồ nam</a>
+                                            </h3>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Philips">Đồng hồ Philips</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Epos swiss">Đồng hồ Epos swiss</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Eries gold">Đồng hồ Eries gold</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Citizen">Đồng hồ Citizen</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Tourbillon">Đồng hồ Tourbillon</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Du manoir">Đồng hồ Du manoir</a> 
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3">
+                                        <ul class="pl-0">
+                                            <h3>
+                                                <a href="/dong-ho-nam" title="Đồng hồ nam">Đồng hồ nam</a>
+                                            </h3>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Philips">Đồng hồ Philips</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Epos swiss">Đồng hồ Epos swiss</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Eries gold">Đồng hồ Eries gold</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Citizen">Đồng hồ Citizen</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Tourbillon">Đồng hồ Tourbillon</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Du manoir">Đồng hồ Du manoir</a> 
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3">
+                                        <ul class="pl-0">
+                                            <h3>
+                                                <a href="/dong-ho-nam" title="Đồng hồ nam">Đồng hồ nam</a>
+                                            </h3>
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Philips">Đồng hồ Philips</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Epos swiss">Đồng hồ Epos swiss</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Eries gold">Đồng hồ Eries gold</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Citizen">Đồng hồ Citizen</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Tourbillon">Đồng hồ Tourbillon</a> 
+                                            </li>
+                                            
+                                            <li>
+                                                <i class="fa fa-angle-right"></i> 
+                                                <a href="#" title="Đồng hồ Du manoir">Đồng hồ Du manoir</a> 
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="position: relative;">
+                        <a href="#"> Smartwatch <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" title="Apple Watch">Apple Watch </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Xiaomi Watch">Xiaomi Watch </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Huawei Watch">Huawei Watch</a>
+                                <i class="fa fa-angle-right"></i> 
+                                <ul class="sub-menu-2">
+                                    <li><a href="#" title="Đồng hồ sức khỏe Mi">Đồng hồ sức khỏe Mi</a></li>
+                                </ul>               
+                            </li>
+                            <li>
+                                <a href="#" title="Phụ kiện nổi bật">Phụ kiện nổi bật </a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Về chúng tôi</a>
+                    </li>
+                    <li>
+                        <a href="#">Địa chỉ cửa hàng</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="row align-items-center">
+                <a href="#">Trang chủ</a>
+                <i class="fa fa-angle-right ml-3 mr-3"></i>
+                <a href="#">Giỏ hàng</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <h4>GIỎ HÀNG CỦA BẠN</h4>
+                <ul class="cart_list">
+                    <li class="cart_item">
+                        <div class="item_image">
+                            <img src="/images/content/cart/product1.jpg" alt="" width="100%">
+                        </div>
+                        <div class="item_info">
+                            <div>
+                                <a href="#" class="name">Samsung Gear Pro</a>
+                                <p class="price">4.500.000₫</p>
+                            </div>
+                        </div>
+                        <div class="item_quantity">
+                            <div class="quantity">
+                                <button type="button" onclick="if (document.getElementById('quantity').value > 1 ) {
+                                    document.getElementById('quantity').value = parseInt(document.getElementById('quantity').value) - 1 }">
+                                    <i class="fas fa-minus-circle"></i>
+                                </button>
+                                <input type="number" name="quantity" id="quantity" value="1">
+                                <button type="button" onclick="if (document.getElementById('quantity').value < 100 ) {
+                                                document.getElementById('quantity').value = parseInt(document.getElementById('quantity').value) + 1 }"><i class="fas fa-plus-circle"></i></button>
+                            </div>
+                        </div>
+                        <div class="item_total-price">
+                            <p class="price">4.500.000₫</p>
+                        </div>
+                        <div class="item_cancel">
+                            <i class="fa fa-times"></i>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer" style="background-image: url('./images/footer/bg_footer.jpg');">
+        <div class="footer_mask"></div>
+        <div class="footer_top container">
+            <div class="row">
+                <div class="social col-xl-4 col-lg-4 col-sm-12">
+                    <p class="footer_title">
+                        Cộng đồng Smartwatch
+                    </p>
+                    <div class="social_list d-flex">
+                                    
+                        <a class="footer_social_icon" href="#" title="Theo dõi trên Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        
+                        
+                        <a class="footer_social_icon" href="#" title="Theo dõi trên Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        
+                        
+                        <a class="footer_social_icon" href="#" title="Theo dõi trên Google">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        
+                        
+                        <a class="footer_social_icon" href="#" title="Theo dõi trên In">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        
+                        
+                        <a class="footer_social_icon" href="#" title="Theo dõi trên Youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="form col-xl-8 col-lg-8 col-sm-12">
+                    <p class="footer_title">
+                        Đăng ký nhận khuyến mãi			
+                    </p>
+                    <form class="row">
+                        <div>
+                            <input type="text" class="form-control" placeholder="Nhập tên của bạn" required="">
+                            <input type="email" class="form-control" placeholder="Nhập Email" required="">
+                        </div>
+                        <button class="btn btn-default" type="submit">
+                                Đăng ký ngay <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom container">
+            <div class="row">
+                <div class="footer_bottom_address col-xl-4 col-lg-4 pl-0">
+                    <h4>Showroom DW Watch</h4>
+                    <p>Cơ sở I: Ngự Câu, An Thượng Hoài Đức, Hà Nội</p>
+                    <p>Cơ sở I: Ngự Câu, An Thượng Hoài Đức, Hà Nội</p>
+                    <p>Cơ sở I: Ngự Câu, An Thượng Hoài Đức, Hà Nội</p>
+                    <p>Hotline mua hàng: <a href="#">0388287614</a></p>
+                    <p>Hotline mua hàng: <a href="#">0388287614</a></p>
+                    <p>Hotline mua hàng: <a href="#">0388287614</a></p>
+                </div>
+                <div class="col-xl-8 col-lg-8 row footer_bottom_menu pl-0 pr-0">
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <h4>Chính sách của cửa hàng</h4>
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">SmartWatch</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Địa chỉ cửa hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <h4>HỖ TRỢ ONLINE</h4>
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">SmartWatch</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Địa chỉ cửa hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <h4>BẢO HÀNH</h4>
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">SmartWatch</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Địa chỉ cửa hàng</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom footer_bottom-mobile container">
+            <div class="row">
+                <div class="col-sm-12 row footer_bottom_menu pl-0 pr-0">
+                    <div class="col-sm-6 col-12">
+                        <h4>Showroom DW Watch</h4>
+                        <p>Cơ sở I: Ngự Câu, An Thượng Hoài Đức, Hà Nội</p>
+                        <p>Cơ sở I: Ngự Câu, An Thượng Hoài Đức, Hà Nội</p>
+                        <p>Cơ sở I: Ngự Câu, An Thượng Hoài Đức, Hà Nội</p>
+                        <p>Hotline mua hàng: <a href="#">0388287614</a></p>
+                        <p>Hotline mua hàng: <a href="#">0388287614</a></p>
+                        <p>Hotline mua hàng: <a href="#">0388287614</a></p>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <h4>Chính sách của cửa hàng</h4>
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">SmartWatch</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Địa chỉ cửa hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <h4>HỖ TRỢ ONLINE</h4>
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">SmartWatch</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Địa chỉ cửa hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <h4>BẢO HÀNH</h4>
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">SmartWatch</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Địa chỉ cửa hàng</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <span>Bản quyền thuộc về <a href="#">Delta Web</a></span>&nbsp;
+                <span>Cung cấp bởi 
+                    <a href="#" title="Sapo">Sapo</a> 
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP-->
+    <div id="backtotop" onclick="backToTop()">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    
+</body>
+</html>

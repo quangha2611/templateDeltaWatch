@@ -98,6 +98,15 @@ html {
 }
 
 
+@media only screen and (max-width: 1024px) {
+    .content {
+        &_main {
+            box-shadow: unset;
+        }
+    }
+}
+
+
 
 @import '/sass/layouts/notification-sale.scss';
 

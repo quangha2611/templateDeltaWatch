@@ -31,6 +31,90 @@ html {
 }
 
 .content {
+    h4 {
+        width: 100%;
+    }
+    .cart_list {
+        list-style: none;
+        width: 100%;
+
+        .cart_item {
+            width: 100%;
+            display: flex;
+            .item_image {
+                width: 10%
+            }
+            .item_info {
+                width: 40%;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                flex-wrap: wrap;
+                padding-left: 2rem;
+            }
+
+            .item_quantity {
+                width: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .quantity {
+                border: 1px solid #ebebeb;
+                padding: 0.75rem 0.25rem;
+                height: 4rem;
+                
+                button {
+                    border: none;
+                    outline: none;
+                    background-color: #fff;
+        
+                    i {
+                        color: #666;
+                    }
+                }
+        
+                input {
+                    border: none;
+                    width: 4rem;
+                    color: #f61900;
+                    font-weight: bold;
+                    font-size: 18px;
+                    text-align: center;
+                }
+        
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+
+            .item_total-price {
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .item_cancel {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                i {
+                    font-size: 16px;
+                    color: #999;
+                }
+            }
+
+            .price {
+                color: #f61900;
+                font-weight: bold;
+            }
+        }
+    }
 
 }
 
